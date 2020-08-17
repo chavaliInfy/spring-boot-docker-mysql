@@ -44,16 +44,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<plugin>
-	 <artifactId>maven-surefire-plugin</artifactId>
-           <!-- Use the SNAPSHOT version -->
-            <version>3.0.0-SNAPSHOT</version>
-         <configuration>
-        <!-- Activate the use of TCP to transmit events to the plugin -->
-        <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory"/>
-       </configuration>
-        </plugin>
-
 	<build>
 		<plugins>
 			<plugin>
